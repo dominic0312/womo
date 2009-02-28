@@ -1,0 +1,735 @@
+  [4;36;1mSQL (0.000399)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000282)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.006947)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.005411)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000301)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWords (20090228113127)
+  [4;36;1mSQL (0.000146)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.010077)[0m   [0mCREATE TABLE "words" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "english" varchar(255) DEFAULT NULL NULL, "chinese" varchar(255) DEFAULT NULL NULL, "japanese" varchar(255) DEFAULT NULL NULL, "sentences" text DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.006679)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090228113127')[0m
+  [4;35;1mSQL (0.000406)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000409)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000170)[0m   [0mPRAGMA index_list("words")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-28 20:52:10) [GET]
+  Session ID: b6d834e881b7fa496de7449d86aaf631
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/products" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:37:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /home/dominic/develop/womo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-28 20:52:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--69737361336f1c0f0b61967e7e12e5e7aef94d51
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/product" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:37:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /home/dominic/develop/womo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 20:52:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--69737361336f1c0f0b61967e7e12e5e7aef94d51
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;36;1mWord Load (0.001466)[0m   [0;1mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.07685 (13 reqs/sec) | Rendering: 0.03517 (45%) | DB: 0.00147 (1%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 20:52:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--69737361336f1c0f0b61967e7e12e5e7aef94d51
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.21989 (4 reqs/sec) | Rendering: 0.20837 (94%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]
+
+
+Processing WordsController#create (for 127.0.0.1 at 2009-02-28 20:52:53) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"commit"=>"Create", "word"=>{"english"=>"car", "sentences"=>"", "chinese"=>"汽车", "japanese"=>""}, "authenticity_token"=>"e040eb560c76e770827945f3c4490bf4d89a6779", "action"=>"create", "controller"=>"words"}
+  [4;35;1mWord Create (0.025684)[0m   [0mINSERT INTO "words" ("created_at", "updated_at", "english", "sentences", "chinese", "japanese") VALUES('2009-02-28 11:52:54', '2009-02-28 11:52:54', 'car', '', '汽车', '')[0m
+Redirected to http://127.0.0.1:3000/words/1
+Completed in 0.07190 (13 reqs/sec) | DB: 0.02568 (35%) | 302 Found [http://127.0.0.1/words]
+
+
+Processing WordsController#show (for 127.0.0.1 at 2009-02-28 20:52:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdG--796c913e33de9b2f3eb3d9f7b6d34cd2378037b4
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000458)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/show
+Completed in 0.04464 (22 reqs/sec) | Rendering: 0.02904 (65%) | DB: 0.00046 (1%) | 200 OK [http://127.0.0.1/words/1]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 20:52:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdU--9d4ee1660bb8dce850ff0c05988c9c5856e7537a
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"words"}
+  [4;35;1mWord Load (0.000447)[0m   [0mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.03208 (31 reqs/sec) | Rendering: 0.01166 (36%) | DB: 0.00045 (1%) | 200 OK [http://127.0.0.1/words/1/edit]
+
+
+Processing WordsController#update (for 127.0.0.1 at 2009-02-28 20:54:09) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"commit"=>"Update", "word"=>{"english"=>"car", "sentences"=>"その自動車は日本制の自動車です・", "chinese"=>"汽车", "japanese"=>"自動車"}, "authenticity_token"=>"e040eb560c76e770827945f3c4490bf4d89a6779", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000433)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+  [4;35;1mWord Update (0.000370)[0m   [0mUPDATE "words" SET "updated_at" = '2009-02-28 11:54:09', "sentences" = 'その自動車は日本制の自動車です・', "japanese" = '自動車' WHERE "id" = 1[0m
+Redirected to http://127.0.0.1:3000/words/1
+Completed in 0.03859 (25 reqs/sec) | DB: 0.00080 (2%) | 302 Found [http://127.0.0.1/words/1]
+
+
+Processing WordsController#show (for 127.0.0.1 at 2009-02-28 20:54:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4G
+OgpAdXNlZHsGOwdG--1dbca508443a8e1d3cf7ca6aceda6b8bfe8c34a6
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000429)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/show
+Completed in 0.03058 (32 reqs/sec) | Rendering: 0.00442 (14%) | DB: 0.00043 (1%) | 200 OK [http://127.0.0.1/words/1]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 20:54:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4G
+OgpAdXNlZHsGOwdU--e842e133790836e425ccbea5b0d02cb56adc53b1
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.000861)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.01359 (73 reqs/sec) | Rendering: 0.00522 (38%) | DB: 0.00086 (6%) | 200 OK [http://127.0.0.1/words]
+  [4;36;1mSQL (0.001439)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000593)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateWords (20090228113127)
+  [4;36;1mSQL (0.000494)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddFuriganaToWord (20090228130247)
+  [4;35;1mSQL (0.000400)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000352)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.010577)[0m   [0mALTER TABLE "words" ADD "furigana" varchar(255)[0m
+  [4;36;1mSQL (0.080052)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.005467)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090228130247')[0m
+  [4;36;1mSQL (0.000899)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000916)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mPRAGMA index_list("words")[0m
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 22:13:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;36;1mWord Load (0.002206)[0m   [0;1mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.23791 (4 reqs/sec) | Rendering: 0.10840 (45%) | DB: 0.00221 (0%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 22:13:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.01847 (54 reqs/sec) | Rendering: 0.00717 (38%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]
+  [4;36;1mSQL (0.000825)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002194)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000335)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateWords (20090228113127)
+  [4;35;1mSQL (0.000285)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddFuriganaToWord (20090228130247)
+  [4;36;1mSQL (0.000279)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddSamemeaningToWord (20090228132250)
+  [4;35;1mSQL (0.000285)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.006562)[0m   [0mALTER TABLE "words" ADD "samemeaning" word[0m
+  [4;36;1mSQL (0.007820)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.003363)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090228132250')[0m
+  [4;36;1mSQL (0.000534)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000329)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 22:23:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.02940 (34 reqs/sec) | Rendering: 0.01010 (34%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 22:23:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001005)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.02376 (42 reqs/sec) | Rendering: 0.00603 (25%) | DB: 0.00101 (4%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 22:23:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.02416 (41 reqs/sec) | Rendering: 0.01053 (43%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 22:57:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+
+
+ActionView::TemplateError (undefined method `furikana' for #<Word:0xb57ef92c>) on line #25 of words/new.html.erb:
+22:   </p>
+23:   <p>
+24:     <%= f.label :furikana %>
+25:     <%= f.text_area :furikana %>
+26:   </p>
+27:   <p>
+28:     <%= f.submit "Create" %>
+
+    vendor/rails/activerecord/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:624:in `send'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:624:in `value_before_type_cast'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:612:in `value_before_type_cast'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:568:in `to_text_area_tag'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:445:in `text_area'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:709:in `send'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:709:in `text_area'
+    app/views/words/new.html.erb:25:in `_run_erb_47app47views47words47new46html46erb'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:317:in `fields_for'
+    vendor/rails/actionpack/lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/words/new.html.erb:4:in `_run_erb_47app47views47words47new46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/words_controller.rb:29:in `new'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:37:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /home/dominic/develop/womo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 23:01:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.05752 (17 reqs/sec) | Rendering: 0.04677 (81%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]
+
+
+Processing WordsController#create (for 127.0.0.1 at 2009-02-28 23:02:26) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"commit"=>"Create", "word"=>{"english"=>"not ", "sentences"=>"いいえ　ここはわたしのことではない", "chinese"=>"不", "furigana"=>"いいえ", "japanese"=>"いいえ"}, "authenticity_token"=>"e040eb560c76e770827945f3c4490bf4d89a6779", "action"=>"create", "controller"=>"words"}
+  [4;36;1mWord Create (0.000416)[0m   [0;1mINSERT INTO "words" ("created_at", "updated_at", "samemeaning", "english", "sentences", "chinese", "furigana", "japanese") VALUES('2009-02-28 14:02:26', '2009-02-28 14:02:26', NULL, 'not ', 'いいえ　ここはわたしのことではない', '不', 'いいえ', 'いいえ')[0m
+Redirected to http://127.0.0.1:3000/words/2
+Completed in 0.02406 (41 reqs/sec) | DB: 0.00042 (1%) | 302 Found [http://127.0.0.1/words]
+
+
+Processing WordsController#show (for 127.0.0.1 at 2009-02-28 23:02:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdG--796c913e33de9b2f3eb3d9f7b6d34cd2378037b4
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"words"}
+  [4;35;1mWord Load (0.000508)[0m   [0mSELECT * FROM "words" WHERE ("words"."id" = 2) [0m
+Rendering template within layouts/words
+Rendering words/show
+Completed in 0.01568 (63 reqs/sec) | Rendering: 0.00477 (30%) | DB: 0.00051 (3%) | 200 OK [http://127.0.0.1/words/2]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 23:02:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdU--9d4ee1660bb8dce850ff0c05988c9c5856e7537a
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"words"}
+  [4;36;1mWord Load (0.000478)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 2) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.02363 (42 reqs/sec) | Rendering: 0.00782 (33%) | DB: 0.00048 (2%) | 200 OK [http://127.0.0.1/words/2/edit]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:02:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001075)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.01679 (59 reqs/sec) | Rendering: 0.00631 (37%) | DB: 0.00108 (6%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:31:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;36;1mWord Load (0.001284)[0m   [0;1mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+
+
+ActionView::TemplateError (undefined method `furiganwa' for #<Word:0xb5775334>) on line #17 of words/index.html.erb:
+14:     <td><%=h word.chinese %></td>
+15:     <td><%=h word.japanese %></td>
+16:     <td><%=h word.sentences %></td>
+17:     <td><%= h word.furiganwa %></td>
+18:     <td><%= link_to 'Show', word %></td>
+19:     <td><%= link_to 'Edit', edit_word_path(word) %></td>
+20:     <td><%= link_to 'Destroy', word, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    vendor/rails/activerecord/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    app/views/words/index.html.erb:17:in `_run_erb_47app47views47words47index46html46erb'
+    app/views/words/index.html.erb:11:in `each'
+    app/views/words/index.html.erb:11:in `_run_erb_47app47views47words47index46html46erb'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `send'
+    vendor/rails/actionpack/lib/action_view/base.rb:338:in `execute'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    vendor/rails/actionpack/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:35:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/words_controller.rb:7:in `index'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:37:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /home/dominic/develop/womo/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:32:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001087)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.04263 (23 reqs/sec) | Rendering: 0.02817 (66%) | DB: 0.00109 (2%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:33:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;36;1mWord Load (0.001146)[0m   [0;1mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.01745 (57 reqs/sec) | Rendering: 0.00811 (46%) | DB: 0.00115 (6%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 23:33:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"words"}
+  [4;35;1mWord Load (0.000476)[0m   [0mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.02203 (45 reqs/sec) | Rendering: 0.00680 (30%) | DB: 0.00048 (2%) | 200 OK [http://127.0.0.1/words/1/edit]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 23:35:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000549)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.04106 (24 reqs/sec) | Rendering: 0.01454 (35%) | DB: 0.00055 (1%) | 200 OK [http://127.0.0.1/words/1/edit]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:40:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001076)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.02229 (44 reqs/sec) | Rendering: 0.01341 (60%) | DB: 0.00108 (4%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#show (for 127.0.0.1 at 2009-02-28 23:40:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000474)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/show
+Completed in 0.02113 (47 reqs/sec) | Rendering: 0.00524 (24%) | DB: 0.00047 (2%) | 200 OK [http://127.0.0.1/words/1]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:40:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001177)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.03250 (30 reqs/sec) | Rendering: 0.01466 (45%) | DB: 0.00118 (3%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 23:40:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.001082)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.02064 (48 reqs/sec) | Rendering: 0.00786 (38%) | DB: 0.00108 (5%) | 200 OK [http://127.0.0.1/words/1/edit]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 23:41:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"words"}
+  [4;35;1mWord Load (0.000506)[0m   [0mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.04939 (20 reqs/sec) | Rendering: 0.02435 (49%) | DB: 0.00051 (1%) | 200 OK [http://127.0.0.1/words/1/edit]
+
+
+Processing WordsController#update (for 127.0.0.1 at 2009-02-28 23:41:46) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"commit"=>"Update", "word"=>{"english"=>"car", "sentences"=>"その自動車は日本制の自動車です・", "chinese"=>"汽车", "furigana"=>"hai", "japanese"=>"自動車"}, "authenticity_token"=>"e040eb560c76e770827945f3c4490bf4d89a6779", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000477)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+  [4;35;1mWord Update (0.000385)[0m   [0mUPDATE "words" SET "updated_at" = '2009-02-28 14:41:46', "furigana" = 'hai' WHERE "id" = 1[0m
+Redirected to http://127.0.0.1:3000/words/1
+Completed in 0.03015 (33 reqs/sec) | DB: 0.00086 (2%) | 302 Found [http://127.0.0.1/words/1]
+
+
+Processing WordsController#show (for 127.0.0.1 at 2009-02-28 23:41:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4G
+OgpAdXNlZHsGOwdG--1dbca508443a8e1d3cf7ca6aceda6b8bfe8c34a6
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000532)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/show
+Completed in 0.01991 (50 reqs/sec) | Rendering: 0.00398 (19%) | DB: 0.00053 (2%) | 200 OK [http://127.0.0.1/words/1]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:41:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNXb3JkIHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4G
+OgpAdXNlZHsGOwdU--e842e133790836e425ccbea5b0d02cb56adc53b1
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001088)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.02901 (34 reqs/sec) | Rendering: 0.00770 (26%) | DB: 0.00109 (3%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#edit (for 127.0.0.1 at 2009-02-28 23:41:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"words"}
+  [4;36;1mWord Load (0.000624)[0m   [0;1mSELECT * FROM "words" WHERE ("words"."id" = 1) [0m
+Rendering template within layouts/words
+Rendering words/edit
+Completed in 0.01830 (54 reqs/sec) | Rendering: 0.00646 (35%) | DB: 0.00062 (3%) | 200 OK [http://127.0.0.1/words/1/edit]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:41:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001580)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.01553 (64 reqs/sec) | Rendering: 0.00621 (39%) | DB: 0.00158 (10%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:43:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;36;1mWord Load (0.001146)[0m   [0;1mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.03829 (26 reqs/sec) | Rendering: 0.01368 (35%) | DB: 0.00115 (2%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 23:43:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.04703 (21 reqs/sec) | Rendering: 0.00996 (21%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]
+
+
+Processing WordsController#index (for 127.0.0.1 at 2009-02-28 23:44:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"index", "controller"=>"words"}
+  [4;35;1mWord Load (0.001114)[0m   [0mSELECT * FROM "words" [0m
+Rendering template within layouts/words
+Rendering words/index
+Completed in 0.04737 (21 reqs/sec) | Rendering: 0.01539 (32%) | DB: 0.00111 (2%) | 200 OK [http://127.0.0.1/words]
+
+
+Processing WordsController#new (for 127.0.0.1 at 2009-02-28 23:44:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODdmZDVlYmMxMWRkNWU4NzUyZjAyNGQxNzEzZTI1
+YmQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--433b5746e6dc073c8247ee3d7d1a570769c1c3d9
+  Parameters: {"action"=>"new", "controller"=>"words"}
+Rendering template within layouts/words
+Rendering words/new
+Completed in 0.02706 (36 reqs/sec) | Rendering: 0.00797 (29%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/words/new]

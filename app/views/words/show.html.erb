@@ -1,0 +1,24 @@
+<p>
+  <b>English:</b>
+  <%=h @word.english %>
+</p>
+
+<p>
+  <b>Chinese:</b>
+  <%=h @word.chinese %>
+</p>
+
+<p>
+  <b>Japanese:</b>
+  <%=h @word.japanese %>
+</p>
+<p>
+  <b> Furikana </b>
+  <%= h @word.furigana %>
+</p>
+<p>
+  <b>Sentences:</b>
+  <%=h @word.sentences %>
+</p>
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

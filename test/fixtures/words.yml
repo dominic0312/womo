@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  english: MyString
+  chinese: MyString
+  japanese: MyString
+  sentences: MyText
+
+two:
+  english: MyString
+  chinese: MyString
+  japanese: MyString
+  sentences: MyText
