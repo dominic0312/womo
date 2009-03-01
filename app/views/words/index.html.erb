@@ -1,28 +1,53 @@
-<h1>Listing words</h1>
 
-<table>
-  <tr>
-    <th>English</th>
-    <th>Chinese</th>
-    <th>Japanese</th>
-    <th>furigana</th>
-    <th>Sentences</th>
-  </tr>
 
-<% for word in @words %>
-  <tr>
-    <td><%=h word.english %></td>
-    <td><%=h word.chinese %></td>
-    <td><%=h word.japanese %></td>
-    <td><%= h word.furigana %></td>
-    <td><%=h word.sentences %></td>
-    <td><%= link_to 'Show', word %></td>
-    <td><%= link_to 'Edit', edit_word_path(word) %></td>
-    <td><%= link_to 'Destroy', word, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+<div id="page">
+      <div id="content">
+          <h1></h1>
+          <table cellspacing="0" cellpadding="5">
+             <tr>
+                 <th>&nbsp &nbsp  Chinese</th>
+                 <th>English</th>
+                 <th>Japanese</th>
+                 <th>furigana</th>
+               </tr>
 
-<br />
 
-<%= link_to 'New word', new_word_path %>
+            <%for word in @words -%>
+            <div class="post">
+
+              <tr> <td><h1 class="title"><%=h word.chinese%></h1></td>
+                   <td><div class="entry"><%=h word.english%></div></td>
+                   <td><div class="entry"><%=h word.japanese%></div></td>
+                   <td><div class="entry"><%=h word.furigana%></div></td>
+                        <td><div class="list-actions">
+                             <%= link_to 'Show', word %><br/>
+                             <%= link_to 'Edit', edit_word_path(word) %><br/>
+                             <%= link_to 'Destory', word,
+                                         :confirm=> 'Are you sure?',
+                                         :method=>:delete %> 
+                        </td>
+                      </tr>    
+                 </div>
+                 
+               </div>       
+            <% end -%>
+          </table>
+            <br/>
+          <%= link_to 'New word', new_word_path %>
+      </div>
+	<div style="clear: both;">&nbsp;</div>
+<!-- end page -->
+<!-- start footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
